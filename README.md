@@ -1,15 +1,12 @@
 # FINBOARD
 
-A customizable finance dashboard builder that lets you connect to any financial API and create real-time data widgets.
-
-![Next.js](https://img.shields.io/badge/Next.js-14-black)
-![TypeScript](https://img.shields.io/badge/TypeScript-5-blue)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind-3-38bdf8)
+A Customizable Finance Dashboard where users can build their
+own real-time finance monitoring dashboard by connecting to various financial APIs and displaying real-time data through customizable widgets.
 
 ## Features
 
-- **Custom Widgets** - Create widgets from any finance API (stocks, crypto, forex, etc.)
-- **Multiple Display Modes** - Cards, tables, line charts, and candlestick charts
+- **Custom Widgets** - Users can create widgets from any finance API (stocks, crypto, forex, etc.)
+- **Multiple Display Modes** - Cards, tables,charts.
 - **Real-time Updates** - Auto-refresh with configurable intervals
 - **Responsive Layout** - Drag-and-drop grid that adapts to all screen sizes
 - **Data Caching** - Smart caching to reduce API calls
@@ -32,13 +29,13 @@ npm run build
 npm start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) in your browser.
+Open (http://localhost:3000) in your browser.
 
 ## Usage
 
 ### Adding a Widget
 
-1. Click **"+ Add Widget"** or **"+ Add Your First Widget"**
+1. Click on **"+ Add Widget"** or **"+ Add Your First Widget"**
 2. Enter a name for your widget
 3. Enter your API URL
 4. (Optional) Add API key and header name if required for authentication
@@ -116,37 +113,14 @@ FINBOARD works with any REST API that returns JSON. Common use cases:
 
 ### Authentication
 
-Two methods supported:
-1. **Query Parameters** - Add API key directly in URL (`?token=YOUR_KEY` or `?apikey=YOUR_KEY`)
-2. **Header-based** - Provide API Key and custom header name (default: `x-api-key`)
-
-The system will detect which authentication method works best for your API during testing.
+ **Query Parameters** - Add API key directly in URL (`?token=YOUR_KEY` or `?apikey=YOUR_KEY`)
 
 ### CORS Handling
 
 If an API blocks browser requests, FINBOARD automatically uses a Next.js proxy route to fetch data server-side.
 
-## Configuration
 
-### Environment Variables
-
-No environment variables required. All configuration is done through the UI.
-
-### Cache Settings
-
-- **Cache TTL**: How long to cache API responses (default: 30s)
 - **Refresh Interval**: How often to fetch new data (0 = disabled)
-
-## Tips
-
-- Use the JSON field explorer to find the exact paths to your desired fields
-- Set refresh interval based on your API rate limits (0 = no auto-refresh)
-- Test your API connection before selecting fields to ensure proper authentication
-- Detected currencies are automatically identified from API responses
-- Drag widgets by their header (not the data area) to rearrange
-- Refresh intervals are independent per widget - set different intervals for different data freshness needs
-- Browser storage persists your dashboard configuration automatically
-
 
 ---
 
