@@ -3,17 +3,25 @@
 A Customizable Finance Dashboard where users can build their
 own real-time finance monitoring dashboard by connecting to various financial APIs and displaying real-time data through customizable widgets.
 
-## Features
+## 🌐 Live Demo  
+🔗 **https://fin-board-pi.vercel.app/**
 
-- **Custom Widgets** - Users can create widgets from any finance API (stocks, crypto, forex, etc.)
-- **Multiple Display Modes** - Cards, tables,charts.
-- **Real-time Updates** - Auto-refresh with configurable intervals
-- **Responsive Layout** - Drag-and-drop grid that adapts to all screen sizes
-- **Data Caching** - Smart caching to reduce API calls
-- **Theme Support** - Light and dark mode
-- **Field Explorer** - Automatically discover and select data fields from API responses
-- **Currency Detection** - Automatically detects currency from API responses
-- **Persistent Storage** - Dashboard layouts and widget configurations auto-save to browser storage
+## 📦 Repository  
+🔗 **https://github.com/ritikgupta2605/FinBoard**
+
+# 📘 Overview
+
+FINBOARD enables users to connect **any REST API returning JSON** and visualize the data using fully customizable widgets.
+
+Each widget supports:
+
+- Multiple display modes (Card, Table, Chart)
+- Auto-refresh intervals for real-time updates
+- Field selection using JSON Explorer
+- Drag-and-drop positioning
+- Responsive resizing
+- Persistent local storage
+- Light/Dark theme options
 
 ## Quick Start
 
@@ -29,7 +37,7 @@ npm run build
 npm start
 ```
 
-Open (http://localhost:3000) in your browser.
+Open http://localhost:3000 in your browser.
 
 ## Usage
 
